@@ -29,8 +29,6 @@ It displays a user profile with name, bio, social links, hobbies, dislikes, and 
 ---
 
 
----
-
 ## 🛠️ How to Run Locally
 
 1. **Clone the Repository**
