@@ -4,6 +4,7 @@ A simple and elegant **Profile Card** built using **HTML**, **Tailwind CSS**, an
 It displays a user profile with name, bio, social links, hobbies, dislikes, and view count — updating dynamically on each visit.
 
 ---
+## Screenshots
 
 ![Profile Preview](/assets/Profile-Card.png)
 
