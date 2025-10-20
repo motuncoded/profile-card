@@ -1,16 +1,16 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile Card</title>
 
-      <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/output.css" rel="stylesheet" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
     <main
-      class="flex items-center justify-center min-h-screen bg-lime-400"
+      class="flex flex-col items-center justify-center min-h-screen bg-lime-400"
       data-testid="test-main-container"
     >
       <article
@@ -41,17 +41,17 @@
             class="w-20 h-20 rounded-full border-4 border-lime-400 object-cover"
             data-testid="test-user-avatar"
           />
-    </figure>
+        </figure>
 
         <!-- Name -->
-         <header data-testid="test-user-header">
-        <h1
-          class="text-lg font-semibold text-center"
-          data-testid="test-user-name"
-        >
-          Motunrayo Adeneye
-        </h1>
-</header>
+        <header data-testid="test-user-header">
+          <h1
+            class="text-lg font-semibold text-center"
+            data-testid="test-user-name"
+          >
+            Motunrayo Adeneye
+          </h1>
+        </header>
         <!-- Bio -->
         <p
           class="text-gray-400 text-center text-sm"
@@ -65,10 +65,12 @@
         <p
           class="text-gray-400 text-sm text-center"
           data-testid="test-user-time"
-        > <span id="time"></span> ms</p>
+        >
+          <span id="time"></span> ms
+        </p>
 
         <!-- Views -->
-        <p class="text-center text-sm"           data-testid="test-user-views">
+        <p class="text-center text-sm" data-testid="test-user-views">
           <span class="font-bold text-white" id="views">0</span> Views
         </p>
 
@@ -91,37 +93,41 @@
 
         <!-- Social Links -->
         <section class="mt-4" data-testid="test-user-social-links">
-        
-          <ul class="flex justify-center gap-4" data-testid="test-user-social-links-list" >
-            
-             <li           data-testid="test-user-social-twitter">
-              <a href="https://x.com/motunadeneye" target="_blank" 
-        class="focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full inline-flex items-center justify-center p-1 transition-transform duration-150 hover:scale-110"
+          <ul
+            class="flex justify-center gap-4"
+            data-testid="test-user-social-links-list"
+          >
+            <li data-testid="test-user-social-twitter">
+              <a
+                href="https://x.com/motunadeneye"
+                target="_blank"
+                class="focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full inline-flex items-center justify-center p-1 transition-transform duration-150 hover:scale-110"
                 ><img
                   src="/assets/twitter.svg"
                   alt="twitter"
                   class="w-6 h-6 rounded-full bg-gray-100"
-                                  aria-label="Visit Twitter"
-
+                  aria-label="Visit Twitter"
                   data-testid="test-user-social-twitter"
               /></a>
-              
             </li>
-            <li  data-testid="test-user-social-linkedin">
-              <a href="https://www.linkedin.com/in/motunrayoadeneye/" target="_blank" 
-        class="focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full inline-flex items-center justify-center p-1 transition-transform duration-150 hover:scale-110"
+            <li data-testid="test-user-social-linkedin">
+              <a
+                href="https://www.linkedin.com/in/motunrayoadeneye/"
+                target="_blank"
+                class="focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full inline-flex items-center justify-center p-1 transition-transform duration-150 hover:scale-110"
                 ><img
                   src="/assets/linkedin.svg"
                   alt="LinkedIn"
-                  class="w-6 h-6 "
-                                  aria-label="Visit Twitter "
-
+                  class="w-6 h-6"
+                  aria-label="Visit Twitter "
                   data-testid="test-user-social-twitter"
               /></a>
             </li>
-            <li  data-testid="test-user-social-github">
-              <a href="https://github.com/motuncoded" target="_blank" 
-        class="focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full inline-flex items-center justify-center p-1 transition-transform duration-150 hover:scale-110"
+            <li data-testid="test-user-social-github">
+              <a
+                href="https://github.com/motuncoded"
+                target="_blank"
+                class="focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 focus:ring-offset-gray-900 rounded-full inline-flex items-center justify-center p-1 transition-transform duration-150 hover:scale-110"
                 ><img
                   src="/assets/github.svg"
                   alt="GitHub"
@@ -134,49 +140,92 @@
 
         <!-- Hobbies -->
         <section class="mt-4" data-testid="test-user-hobbies">
-          <h2 class="text-sm font-semibold mb-2 text-center text-lime-300" data-testid="test-user-hobbies-heading">
+          <h2
+            class="text-sm font-semibold mb-2 text-center text-lime-300"
+            data-testid="test-user-hobbies-heading"
+          >
             Hobbies
           </h2>
-          <ul class="flex flex-wrap justify-center gap-2 text-xs text-gray-300" data-testid="test-user-hobbies-list">
-            <li class="bg-gray-800 px-3 py-1 rounded-full" data-testid="test-user-hobbies-reading">Reading</li>
-            <li class="bg-gray-800 px-3 py-1 rounded-full" data-testid="test-user-hobbies-design">Design</li>
-            <li class="bg-gray-800 px-3 py-1 rounded-full" data-testid="test-user-hobbies-coding">Coding</li>
-            <li class="bg-gray-800 px-3 py-1 rounded-full" data-testid="test-user-hobbies-voluteering">Volunteering</li>
+          <ul
+            class="flex flex-wrap justify-center gap-2 text-xs text-gray-300"
+            data-testid="test-user-hobbies-list"
+          >
+            <li
+              class="bg-gray-800 px-3 py-1 rounded-full"
+              data-testid="test-user-hobbies-reading"
+            >
+              Reading
+            </li>
+            <li
+              class="bg-gray-800 px-3 py-1 rounded-full"
+              data-testid="test-user-hobbies-design"
+            >
+              Design
+            </li>
+            <li
+              class="bg-gray-800 px-3 py-1 rounded-full"
+              data-testid="test-user-hobbies-coding"
+            >
+              Coding
+            </li>
+            <li
+              class="bg-gray-800 px-3 py-1 rounded-full"
+              data-testid="test-user-hobbies-voluteering"
+            >
+              Volunteering
+            </li>
           </ul>
         </section>
 
         <!-- Dislikes -->
         <section class="mt-4" data-testid="test-user-dislikes">
-          <h2 class="text-sm font-semibold mb-2 text-center text-lime-300" data-testid="test-user-dislikes-heading">
+          <h2
+            class="text-sm font-semibold mb-2 text-center text-lime-300"
+            data-testid="test-user-dislikes-heading"
+          >
             Dislikes
           </h2>
-          <ul class="flex flex-wrap justify-center gap-2 text-xs text-gray-300" data-testid="test-user-dislikes-list" >
-            <li class="bg-gray-800 px-3 py-1 rounded-full" data-testid="test-user-dislikes-procrastination">Procrastination</li>
-            <li class="bg-gray-800 px-3 py-1 rounded-full" data-testid="test-user-dislikes-unclear-goals">Unclear goals</li>
-            <li class="bg-gray-800 px-3 py-1 rounded-full" data-testid="test-user-dislikes-poor-design">Poor design</li>
+          <ul
+            class="flex flex-wrap justify-center gap-2 text-xs text-gray-300"
+            data-testid="test-user-dislikes-list"
+          >
+            <li
+              class="bg-gray-800 px-3 py-1 rounded-full"
+              data-testid="test-user-dislikes-procrastination"
+            >
+              Procrastination
+            </li>
+            <li
+              class="bg-gray-800 px-3 py-1 rounded-full"
+              data-testid="test-user-dislikes-unclear-goals"
+            >
+              Unclear goals
+            </li>
+            <li
+              class="bg-gray-800 px-3 py-1 rounded-full"
+              data-testid="test-user-dislikes-poor-design"
+            >
+              Poor design
+            </li>
           </ul>
         </section>
       </article>
+      <div class="flex gap-4 mt-3">
+        <a
+          href="/contact.html"
+          class="px-4 py-2 bg-gray-900 border-2 border-gray-900 hover:border-lime-400 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2"
+        >
+          Contact
+        </a>
+        <a
+          href="/about.html"
+          class="px-4 py-2 bg-gray-900 border-2 border-gray-900 hover:border-lime-400 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2"
+        >
+          About
+        </a>
+      </div>
     </main>
 
-    <script>
-      const views = document.getElementById("views");
-      const time = document.getElementById("time");
-
-      // Get and update views count
-      let viewsCount = localStorage.getItem("profileViews");
-      if (!viewsCount) {
-        viewsCount = 0;
-      }
-      viewsCount++;
-      localStorage.setItem("profileViews", viewsCount);
-
-      // Display the updated views count
-      views.textContent = viewsCount;
-
-      // Display current time in readable format
-      const currentTime = Date.now();
-      time.textContent = currentTime;
-    </script>
+    <script src="./index.js"></script>
   </body>
 </html>
