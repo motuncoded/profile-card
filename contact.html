@@ -14,7 +14,7 @@
       data-testid="test-main-container"
     >
       <article
-        class="w-[340px] bg-gray-900 text-white rounded-2xl shadow-2xl p-4 relative space-y-2"
+        class="w-[360px] bg-gray-900 text-white rounded-2xl shadow-2xl p-4 relative space-y-2"
         data-testid="test-profile-card"
       >
         <header data-testid="test-user-header">
@@ -35,6 +35,7 @@
           id="successMessage"
           class="hidden text-center text-sm text-lime-400 font-medium"
           data-testid="test-contact-success"
+          aria-describedby="successMessage"
         >
           Thank you! Your message has been sent successfully.
         </p>
@@ -43,43 +44,49 @@
           class="mt-4 space-y-4"
           data-testid="test-contact-form"
         >
-          <div data-testid="test-contact-name">
-            <label
-              for="fullName"
-              class="my-2 block text-sm font-medium text-white"
-              >Full Name</label
-            >
-            <input
-              type="text"
-              id="fullName"
-              name="fullName"
-              class="mt-1 block w-full px-3 py-2 bg-gray-800 border invalid:border-2 invalid:border-red-600 border-gray-700 rounded-md text-white focus:outline-none focus:ring-lime-400 focus:border-lime-400"
-            />
-            <p
-              class="text-red-500 text-xs mt-1"
-              data-testid="test-contact-error-name"
-            >
-              Full name is required.
-            </p>
-          </div>
+          <section class="flex flex-col md:flex-row gap-4">
+            <div data-testid="test-contact-name">
+              <label
+                for="name"
+                class="my-2 block text-sm font-medium text-white"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="mt-1 block w-full px-3 py-2 bg-gray-800 border invalid:border-2 invalid:border-red-600 border-gray-700 rounded-md text-white focus:outline-none focus:ring-lime-400 focus:border-lime-400"
+              />
+              <p
+                class="hidden text-red-500 text-xs mt-1"
+                id="nameError"
+                data-testid="test-contact-error-name"
+              >
+                Name is required.
+              </p>
+            </div>
 
-          <div data-testid="test-contact-email">
-            <label for="email" class="my-2 block text-sm font-medium text-white"
-              >Email</label
-            >
-            <input
-              type="email"
-              id="email"
-              name="email"
-              class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-lime-400 focus:border-lime-400"
-            />
-            <p
-              class="text-red-500 text-xs mt-1 hidden"
-              data-testid="test-contact-error-email"
-            >
-              Email is required.
-            </p>
-          </div>
+            <div data-testid="test-contact-email">
+              <label
+                for="email"
+                class="my-2 block text-sm font-medium text-white"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-lime-400 focus:border-lime-400"
+              />
+              <p
+                class="text-red-500 text-xs mt-1 hidden"
+                id="emailError"
+                data-testid="test-contact-error-email"
+              >
+                Email is required.
+              </p>
+            </div>
+          </section>
           <div data-testid="test-contact-subject">
             <label
               for="subject"
@@ -94,6 +101,7 @@
             />
             <p
               class="text-red-500 text-xs mt-1 hidden"
+              id="subjectError"
               data-testid="test-contact-error-subject"
             >
               Subject is required.
@@ -109,10 +117,11 @@
               id="message"
               name="message"
               rows="4"
-              class="mt-1 mb-6 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-lime-400 focus:border-lime-400"
+              class="mt-1 block w-full px-3 py-2 bg-gray-800 border border-gray-700 rounded-md text-white focus:outline-none focus:ring-lime-400 focus:border-lime-400"
             ></textarea>
             <p
               class="text-red-500 text-xs mt-1 hidden"
+              id="messageError"
               data-testid="test-contact-error-message"
             >
               Message must be at least 10 characters long.
@@ -121,7 +130,7 @@
           <div data-testid="test-contact-submit">
             <button
               type="submit"
-              class="w-full px-4 py-2 bg-lime-500 text-white rounded-lg hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2"
+              class="w-full mt-4 px-4 py-2 bg-lime-500 text-white rounded-lg hover:bg-lime-600 focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2"
             >
               Send Message
             </button>
@@ -129,5 +138,6 @@
         </form>
       </article>
     </main>
+    <script src="./main.js"></script>
   </body>
 </html>
