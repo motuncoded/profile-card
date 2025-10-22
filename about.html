@@ -4,6 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Page</title>
+    <link href="./src/output.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body></body>
+  <body class="bg-lime-400 min-h-screen flex flex-col items-center justify-center">
+    <main class="max-w-4xl mx-auto bg-gray-900 text-white rounded-2xl shadow-2xl p-6 space-y-4" data-testid="test-about-page">
+      <article data-testid="test-profile-card">
+        <header data-testid="test-about-header">
+          <h1 class="text-2xl font-bold text-center underline underline-offset-2 " data-testid="test-about-title">
+            About Me
+          </h1>
+        </header>
+
+        <p class="text-gray-400 text-center text-sm">
+          I am a frontend developer with a passion for creating beautiful and functional web applications.
+        </p>
+
+        <section class="mt-6 space-y-6 columns-2" data-testid="test-about-section">
+          <div>
+            <h2 class="text-xl font-semibold hover:underline">Goals of this Program</h2>
+            <p class="text-gray-400 text-sm" data-testid="test-about-goals">
+              My primary goal is to enhance my skills in frontend development, focusing on building responsive and user-friendly interfaces using modern technologies.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold hover:underline">Areas of Low Confidence</h2>
+            <p class="text-gray-400 text-sm" data-testid="test-about-confidence">
+              I feel less confident in backend development and database management. I aim to improve my understanding of server-side technologies and data handling to become a more versatile developer.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold hover:underline">Note to Future Self</h2>
+            <p class="text-gray-400 text-sm" data-testid="test-about-future-note">
+              Keep pushing your limits and never stop learning. The tech industry is constantly evolving, and staying updated with the latest trends and technologies is crucial for long-term success.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="text-xl font-semibold hover:underline">Extra Thoughts</h2>
+            <p class="text-gray-400 text-sm" data-testid="test-about-extra">
+              Remember to balance work and personal life. Taking breaks and pursuing hobbies outside of coding can help maintain creativity and prevent burnout.
+            </p>
+          </div>
+        </section>
+      </article>
+
+      
+    </main>
+    <a
+        href="/index.html"
+        class="inline-block mt-6 px-6 py-2 bg-gray-900 border-2 border-gray-900 hover:border-lime-400 text-white rounded-lg focus:outline-none focus:ring-2 focus:ring-lime-400 focus:ring-offset-2 transition-all duration-200"
+        data-testid="test-back-home-link"
+      >
+        Back to Home
+      </a>
+  </body>
 </html>

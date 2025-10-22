@@ -8,6 +8,8 @@ It displays a user profile with name, bio, social links, hobbies, dislikes, and 
 ## Screenshots
 
 ![Profile Preview](/assets/Profile-Card.png)
+![Contact Preview](/assets/contact-page.png)
+![About Preview](/assets/about-page.png)
 
 ---
 
